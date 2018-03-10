@@ -20,7 +20,7 @@ function calculateDamage() {
 	console.log(damage);
 
 	if (isNaN(damage)) {
-		document.getElementById("result").innerHTML = "Fill out all fields.";
+		document.getElementById("result").innerHTML = "Fill out all the fields.";
 		document.getElementById("result").style.display = "block";
 		document.getElementById("result").style.background = "#b35b5b";
 	} else {
