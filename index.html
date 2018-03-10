@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>Pokemon Damage Calculator</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="Custom damage calculator for Pokemon Super Myster Dungeon DND">
+<meta name="author" content="Kayla Hughes">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="img/pokeball.png" type="image/png" sizes="16x16">
+
+<link rel="stylesheet" href="css/css.css">
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<script src="js/js.js"></script>
+
+</head>
+
+<body>
+
+<header>
+	<h1><a href="index.html">Pokemon Damage Calculator</a></h1>
+</header>
+
+<section>
+
+
+<div id="calculator">
+
+	<p>The calculator rolls the D6 for you automatically</p>
+
+	<input type="number" placeholder="level" id="lvl">
+	<input type="number" placeholder="power" id="pwr">
+	<input type="number" placeholder="attack/defense" id="attdef">
+	<input type="number" placeholder="d6" id="d6">
+	<input type="number" placeholder="modifier" id="mod">
+
+	<div id="buttons-wrapper">
+		<button onclick="calculateDamage()">Calculate Damage</button>
+		<button onclick="resetForm()">Clear</button>
+	</div>
+
+	<div id="damage-wrapper">
+		<div id="result"></div>
+	</div>
+</div>
+
+</section>
+
+<footer>
+	<p>Made with <span id="heart">&#9829;</span> by <b><a href="https://aesteriadesigns.github.io" title="Aesteria Designs">Aesteria Designs</a></b></p>
+</footer>
+
+</body>
+
+</html>
