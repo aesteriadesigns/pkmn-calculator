@@ -17,8 +17,10 @@ function calculateDamage() {
 
 	var damage = (((((2 * lvl/5 + 2) * pwr * att / def) / 50) + d6) * mod);
 
+	console.log(damage);
+
 	if (isNaN(damage)) {
-		document.getElementById("result").innerHTML = "Fill out all the fields.";
+		document.getElementById("result").innerHTML = "Fill out all fields.";
 		document.getElementById("result").style.display = "block";
 		document.getElementById("result").style.background = "#b35b5b";
 	} else {
@@ -38,5 +40,25 @@ function resetForm() {
 			document.getElementById("result").innerHTML = " ";
 			document.getElementById("result").style.display = "none";
 		}
+	}
+}
+
+function showModal() {
+	var modal = document.getElementById("modal");
+	var btn = document.getElementById("modalbtn");
+	var close = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+	    modal.style.display = "block";
+	}
+	
+	close.onclick = function() {
+	    modal.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
 	}
 }
