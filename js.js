@@ -18,7 +18,6 @@ function calculateDamage() {
 	if (isNaN(damage)) {
 		document.getElementById("result").innerHTML = "Error occured. Try again";
 		document.getElementById("result").style.display = "block";
-		document.getElementById("d6").value = d6;
 	} else {
 		document.getElementById("result").innerHTML = "Damage Dealt: "  + Math.round(damage);
 		document.getElementById("result").style.display = "block";
