@@ -21,6 +21,7 @@ function calculateDamage() {
 	} else {
 		document.getElementById("result").innerHTML = "Damage Dealt: "  + Math.round(damage);
 		document.getElementById("result").style.display = "block";
+		document.getElementById("result").style.background = "#5bb383";
 		document.getElementById("d6").value = d6;
 	}
 
