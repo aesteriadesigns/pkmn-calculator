@@ -18,7 +18,7 @@ function calculateDamage() {
 	var damage = (((((2 * lvl/5 + 2) * pwr * att / def) / 50) + d6) * mod);
 
 	if (isNaN(damage)) {
-		document.getElementById("result").innerHTML = "Error occured. Try again";
+		document.getElementById("result").innerHTML = "Fill out all fields.";
 		document.getElementById("result").style.display = "block";
 	} else {
 		document.getElementById("result").innerHTML = "Damage Dealt: "  + Math.round(damage);
