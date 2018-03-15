@@ -48,10 +48,12 @@ function showModal() {
 	var btn = document.getElementById("modalbtn");
 	var close = document.getElementsByClassName("close")[0];
 
-	btn.onclick = function() {
-	    modal.style.display = "block";
+	if (modal.style.display == "block") {
+		modal.style.display = "none";
+	} else {
+		modal.style.display = "block";
 	}
-	
+
 	close.onclick = function() {
 	    modal.style.display = "none";
 	}
